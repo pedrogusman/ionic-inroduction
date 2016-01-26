@@ -1,57 +1,543 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <title>Ionic-inroduction by pedrogusman</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset="utf-8">
+
+    <title>Ionic + Angular: Superpowers for Mobile App Development</title>
+
+    <meta name="description" content="Ionic Framework Presentation: The beautiful, open source framework for developing hybrid mobile apps with HTML5.">
+    <meta name="author" content="https://twitter.com/adamdbradley">
+    <meta name="author" content="https://twitter.com/benjsperry">
+    <meta name="author" content="https://twitter.com/perrygovier">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
   </head>
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Ionic-inroduction</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/pedrogusman/ionic-inroduction" class="btn">View on GitHub</a>
-      <a href="https://github.com/pedrogusman/ionic-inroduction/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/pedrogusman/ionic-inroduction/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <div class="reveal">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+        <section>
+          <img src="img/ionic-logo.png" class="logo" width="296" height="331">
+          <h4>Building Hybrid Apps with AngularJS and Ionic</h4>
+        </section>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <section>
+		<h3 style="text-transform: none;position: absolute; top:-60px; left:300px;">About Me:</h3>
+          <img src="img/me.jpg" style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
+          <ul style="position: absolute; top:30px; left:300px;">
+            <li style="margin-bottom: 10px;font-size:28px"><img src="img/man-128.png" style="height: 30px;margin:0"> Pedro Gusman</li>
+            <li style="margin-bottom: 10px;font-size:28px"><img src="img/graduate-128.png" style="height: 30px;margin:0"> Information Systems Engineer</li>
+            <li style="margin-bottom: 10px;font-size:28px"><img src="img/developer-128.png" style="height: 30px;margin:0"> Frontend Developer</li>
+			<li style="margin-bottom: 10px;font-size:28px"><img src="img/ux-128.png" style="height: 30px;margin:0"> UX Advocate</li>
+			<li style="margin-bottom: 10px;font-size:28px"><img src="img/crossfit-128.png" style="height: 30px;margin:0"> Love Crossfit</li>
+			
+            <!--<li style="margin-bottom: 10px;"><img src="img/marker-128.png" style="height: 30px;margin:0"> Tel Aviv</li>
+            <li style="margin-bottom: 10px;"><img src="img/twitter-128.png" style="height: 30px;margin:0"> @pedrogusmans</li>
+            <li style="margin-bottom: 10px;"><img src="img/email-128.png" style="height: 30px;margin:0"> pedro.gusmans@gmail.com</a></li>-->
+          </ul>
+        </section>
+		
+		<section>
+		  <h3 style="text-transform: none;position: absolute; top:-70px; left:350px;">About Me:</h3>
+		  <!--<h4 style="position: absolute; top:0; left:25%;">Multidine</h4>
+		  <h4 style="position: absolute; top:0; left:65%;">Uteam</h4>-->
+          <img src="img/multidine-logo.png" style="background: white;black;position: absolute; top:0px; left:140px; max-width: 260px; max-height: 160px; height: 160px; border-radius: 30px">
+		  <img src="img/uteam-logo.png" style="background: white;black;position: absolute; top:0px; left:450px; max-width: 260px; max-height: 160px; border-radius: 30px">
+          
+		  <!--<ul style="position: absolute; top:100px; left:60%; font-size:24px">
+            <li style="margin-bottom: 10px;">specializes in CMS based website development</li>
+            <li style="margin-bottom: 10px;"></li>
+            <li style="margin-bottom: 10px;"></li>
+          </ul>-->
+        </section>
+		
+		<section id="fragments">
+		  <h3 style="text-transform: none;position: absolute; top:0px; left:350px;">About Me:</h3>
+		  <!--<h4 style="position: absolute; top:0; left:25%;">Multidine</h4>
+		  <h4 style="position: absolute; top:0; left:65%;">Uteam</h4>-->
+          <img src="img/icon.png" style="position: absolute; top:100px; left:150px; max-width: 260px; max-height: 230px; border-radius: 30px">
+          <img src="img/nosolo.png" class="fragment" style="position: absolute; top:100px; left:450px; max-width: 260px; max-height: 230px; border-radius: 30px">
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+		  <!--<ul style="position: absolute; top:100px; left:60%; font-size:24px">
+            <li style="margin-bottom: 10px;">specializes in CMS based website development</li>
+            <li style="margin-bottom: 10px;"></li>
+            <li style="margin-bottom: 10px;"></li>
+          </ul>-->
+        </section>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <section>
+          <h3>A little about you:</h3>
+          <h4>How many:</h4>
+          <ul>
+            <li>Developers</li>
+            <li>Managers</li>
+            <li>Entrepreneurs</li>
+            <li>Designers</li>
+          </ul>
+        </section>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+        <section>
+          <h2>Overview</h2>
+          <ol>
+            <li>Native vs Hybrid Apps</li>
+            <li>Intro Ionic</li>
+            <li>UI Components</li>
+            <li>Features and Tools</li>
+            <li>Demos</li>
+          </ol>
+        </section>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        <section>
+          <blockquote>
+            &ldquo;I want to build an app!&rdquo;
+          </blockquote>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/pedrogusman/ionic-inroduction">Ionic-inroduction</a> is maintained by <a href="https://github.com/pedrogusman">pedrogusman</a>.</span>
+		<section>
+		  <p>Which path to choose?</p>
+          <img width=80% src="img/confused.gif">
+        </section>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+        <section>
+          <h3>More Platforms. More Problems.</h3>
+          <ul>
+            <li>Proficiency in each platform required</li>
+            <li>Entirely separate code bases</li>
+            <li>Timely &amp; expensive development</li>
+            <li>Diminishing returns</li>
+          </ul>
+          <p style="margin-top: 60px">
+            <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
+            <img src="img/android.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
+            <img src="img/windows.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
+            <img src="img/blackberry.png" class="logo" width="200" height="200" style="margin-left: 10px;">
+          </p>
+        </section>
 
-    </section>
+
+		
+        <section>
+          <h3 style="font-size: 80px">Hybrid Apps!</h3>
+          <p style="font-size: 32px"><strong>HTML5</strong> that acts like native</p>
+          <p style="font-size: 32px">Web wrapped in <strong>native layer</strong></p>
+          <p style="font-size: 32px">Direct access to <strong>native APIs</strong></p>
+          <p style="font-size: 32px">A <strong>single code base</strong> (web platform!)</p>
+        </section>
+		
+		
+		<section>
+          <img src="img/cordova.png" class="" >
+        </section>
+		
+        <section data-background="img/websdk.png" style="width:100%">
+        </section>
+
+        <section>
+          <section>
+            <img src="img/ionic-logo.svg" style="width:750px;">
+          </section>
+        </section>
+
+
+		<section>
+        <section>
+          <h3 style="margin:0; font-size:32px">Web Technologies You Already</h3>
+          <h2 style="font-size: 85px;">Know &amp; Love</h2>
+          <div style="margin-top: 30px">
+            <img src="img/html.png" class="logo" width="185" height="260">
+            <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
+            <img src="img/js.png" class="logo" width="185" height="260">
+          </div>
+          <p style="margin-top: 30px; opacity: 0.6">
+            (You'll feel right at home)
+          </p>
+        </section>
+		<section>
+            <h2 style="color:white; margin-bottom: 50px">What is the Ionic Framework?</h2>
+            <ul >
+              <li>Frontend framework for developing hybrid mobile apps with HTML5 & AngularJS for both iOS & Android platforms.</li>
+              <li>Requires Node.js (hopefully pre-installed on all machines)</li>
+              <li>For iOS apps, requires OS X, Xcode & command line tools</li>
+              <li>For Android requires the Android SDK</li>
+              <li>Without Xcode or Android SDK you can still create view & debug many apps in a web browser.</li>
+            </ul>
+          </section>
+		</section>
+
+
+        <section data-background="img/angular-bg.png">
+          <h3 style="font-size:42px; margin:0">Superpowered by</h3>
+          <h2 style="font-size:90px;">Angular</h2>
+          <p style="margin-top:60px;"><strong>Extends the HTML</strong> vocabulary</p>
+          <p>Proven for <strong>large-scale</strong> app development</p>
+          <p>UI Components using <strong>Directives &amp; Services</strong></p>
+          </ul>
+        </section>
+
+
+        <section data-background="img/sass.png">
+          <h2 style="font-size:3em; text-transform: none;">Sass!</h2>
+          <p>CSS generated from the <strong>Sass preprocessor</strong></p>
+          <p>Quickly give your app its own <strong>look and feel</strong></p>
+          <p>CSS designed to be <strong>easily overridden</strong></p>
+          <p><strong>Variables based</strong> with default settings</p>
+        </section>
+
+
+        <section data-background="img/phones-stacked.png">
+          <h2 style="color:black; margin-bottom: 50px">How it all comes together</h2>
+          <ul class="stack">
+            <li style="background: #20ab93">Your App</li>
+            <li style="background: #4c8df5">Ionic</li>
+            <li style="background: #d94442">Angular</li>
+            <li style="background: #3b4854">WebView (Cordova)</li>
+            <li style="background: #d4deee; color: #3b4854;">Native App</li>
+          </ul>
+        </section>
+
+
+        <section data-background="img/continuity.png">
+		</section>
+        
+		<section>
+          <div class="col preview demo-frame">
+            <iframe isrc="demos/list/index.html"></iframe>
+          </div>
+          <div class="col code">
+            <h2>Complex Lists</h2>
+            <ul style="margin-left: 70px">
+              <li>AngularJS Directive</li>
+              <li>Buttons exposed by swiping</li>
+              <li>Reorder</li>
+              <li>Delete</li>
+            </ul>
+            <pre><code data-trim contenteditable class="xml">
+<ion-list>
+
+  <ion-item ng-repeat="item in items" item="item">
+    List Item {{ item.id }}
+  </ion-item>
+
+</ion-list></code></pre>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="col preview demo-frame">
+            <iframe isrc="demos/collection-repeat/index.html"></iframe>
+          </div>
+          <div class="col code">
+            <h3>Collection Repeat</h3>
+            <ul style="margin-left: 70px">
+              <li>Replacement for Angular's ng-repeat</li>
+              <li>Inspired by iOS’s UICollectionView</li>
+              <li>Scroll through thousands of items</li>
+              <li>Only renders the viewable items</li>
+              <li>Smooth scrolling!</li>
+            </ul>
+            <pre><code data-trim contenteditable class="xml">
+<div class="list">
+  <div collection-repeat="c in contacts">
+    <h2>{{ c.name }}</h2>
+    <p>{{ c.email }}</p>
+  </div>
+</div></code></pre>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="col preview demo-frame">
+            <iframe isrc="demos/tabs-and-navigation/index.html"></iframe>
+          </div>
+          <div class="col code">
+            <h3>Navigation + Tabs</h3>
+            <ul style="margin-left: 70px">
+              <li>Uses AngularUI Router</li>
+              <li>Shows back button when possible</li>
+              <li>Transitions follow direction of nav</li>
+              <li>Updates the app's URL</li>
+              <li>Multi-history stack</li>
+            </ul>
+            <pre><code data-trim contenteditable class="xml">
+<ion-tabs>
+
+  <ion-tab title="Home" icon="ion-ios-home">
+    <ion-nav-view name="home"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="About" icon="ion-ios-information">
+    <ion-nav-view name="about"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Contact" icon="ion-ios-world">
+    <ion-nav-view name="contact"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs></code></pre>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="col preview demo-frame">
+            <iframe isrc="demos/swipe-back_old/index.html"></iframe>
+          </div>
+          <div class="col code">
+            <h3>Swipe To Go Back</h3>
+            <ul style="margin-left: 70px">
+              <li>Swipe back to previous view</li>
+              <li>Interactive transition</li>
+              <li>Benefit of cached views</li>
+              <li>Still updates the app's URL</li>
+              <li>WebView (Cordova) only</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="col preview demo-frame">
+            <iframe isrc="demos/components/index.html"></iframe>
+          </div>
+          <div class="col code">
+            <h3>Other Components</h3>
+            <ul style="margin-left: 70px">
+              <li>Side Menus</li>
+              <li>Actionsheet</li>
+              <li>Modal</li>
+              <li>Pull To Refresh</li>
+              <li>Spinners</li>
+              <li>Slidebox</li>
+              <li>Infinite Scroll</li>
+              <li>Swipeable List Options</li>
+              <li>Popup</li>
+              <li>Popover</li>
+              <li>Loading Overlay</li>
+              <li>Inputs</li>
+              <li>Buttons</li>
+              <li>etc.</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section>
+          <h2><strong>MIT LICENSED</strong></h2>
+          <h6 class="light-text">Free to use (even commercially)</h6>
+        </section>
+
+
+        <section>
+          <h2>Ionicons</h2>
+          <img src="img/ionicons.png" class="logo" width="655" height="436">
+          <p>700+ MIT licensed font-icons included</p>
+          <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
+        </section>
+	
+
+        <section data-background="white">
+          <p><code style="font-size: 1.2em;" class="ionic-blue">npm install -g ionic cordova</code></p>
+          <img src="img/cli.png" height="220" style="border: 0">
+          <p class="ionic-blue">Boilerplate <strong>app structure</strong> ready for customization</p>
+          <p class="ionic-blue"><strong>LiveReload</strong> both local and native builds</p>
+          <p class="ionic-blue">Build and run <strong>native apps</strong></p>
+        </section>
 
   
+
+        <section data-background="img/ng-cordova.png">
+        </section>
+
+
+        <section data-background="img/ionicio.png">
+        </section>
+
+
+        <section data-background="img/ionic-view.png">
+        </section>
+
+
+        <section data-background="img/ionic-creator.png">
+        </section>
+
+
+        <section data-background="img/market.png">
+        </section>
+
+
+        <section data-background="img/community.jpg">
+        </section>
+
+
+        <section data-background="img/ionic-angular-v2.jpg">
+        </section>
+
+
+        <section>
+          <h2>Get Started with Ionic!</h2>
+          <br />
+          <p>
+            <strong>Getting started guide</strong>
+            <br />
+            <a href="hhttp://ionicframework.com/getting-started/" target="_blank">
+              <span class="light-text">ionicframework.com/getting-started</span>
+            </a>
+          </p>
+          <br />
+          <p>
+            <strong>Documentation</strong>
+            <br />
+            <a href="http://ionicframework.com/docs/" target="_blank">
+              <span class="light-text">ionicframework.com/docs</span>
+            </a>
+          </p>
+          <br />
+          <p>
+            <strong>Visit the Community Forum</strong>
+            <br />
+            <a href="http://forum.ionicframework.com/" target="_blank">
+              <span class="light-text">forum.ionicframework.com</span>
+            </a>
+          </p>
+          <br />
+          <p>
+            <strong>Contribute on GitHub</strong>
+            <br />
+            <a href="https://github.com/driftyco/ionic" target="_blank">
+              <span class="light-text">github.com/driftyco/ionic</span>
+            </a>
+          </p>
+        </section>
+
+
+        <section data-background="#232323">
+          <h2 style="color:#32b83b;font-family:Monaco;"><strong>Demo Time!</strong></h2>
+          <h6 style="color:#32b83b;font-family:Monaco;">May the demo gods be with us</h6>
+        </section>
+
+
+        <section>
+          <h2><code style="font-size:60px">&lt;/html&gt;</code></h2>
+          <h3>
+            <a href="https://twitter.com/ionicframework" target="_blank">
+              @ionicframework
+            </a>
+          </h3>
+          <h4>
+            <a href="http://ionicframework.github.io/ionic-present/#/">
+              http://ionicframework.github.io/ionic-present
+            </a>
+          </h4>
+        </section>
+
+
+        <section>
+          <h1>
+            <b>Questions?</b>
+          </h1>
+          <p>
+            <b>Nah, we're running outta time. Seriously.</b>
+          </p>
+          <p><br></p>
+          <p><br></p>
+          <p>
+            <b>Follow us at Twitter:</b>
+          </p>
+          <h2>
+            <b>
+              <a href="https://slid.es/gsklee" target="_blank"> @IonicIsrael</a>
+            </b>
+          </h2>
+          <!-- <p>
+            <b>This slide can be found on</b>
+          </p>
+          <h2>
+            <b>
+              <a href="https://slid.es/gsklee" target="_blank">slid.es/gsklee</a>
+            </b>
+          </h2> -->
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+        // load iframes on page enter to speed up initial load time
+        console.log(event)
+        var iframe = event.currentSlide.querySelector('iframe')
+        if(iframe){
+          iframe.setAttribute('src',iframe.getAttribute('isrc'));
+        }
+
+        var prevIframe = event.previousSlide.querySelector('iframe');
+        if(prevIframe){
+          prevIframe.setAttribute('src','');
+        }
+
+    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+} );
+
+    </script>
+
   </body>
 </html>
